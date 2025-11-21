@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("IMG/Background.png");
+}
+.logos{
+    animation: blink 1s infinite;
+}
+
+#menu{
+    color: white;
+    position: fixed;
+}
