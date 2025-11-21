@@ -24,11 +24,17 @@ body{
 
 }
 .logos{
-    border-top: solid;
-    border-width: 1vh;
     background-color:#2E294E;
+    border-width: 1px;
+    border-color: #2E294E;
+    border-top: solid;
+}
+#IDE{
+border-top: solid;
+border-color: white;
+}
+#languages{
     border-bottom: solid;
-    border-width: 1vh;
     border-color: white;
 }
 
