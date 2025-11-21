@@ -6,11 +6,42 @@
 body{
     background-image: url("IMG/Background.png");
 }
+#showMenu{
+    background-image: url("IMG/Menu.svg");
+    height: 5vh;
+    width: 5vh;
+    background-color: black;
+    border:none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#showMenu:hover{
+    cursor:pointer;
+}
+
+.IDE{
+
+
+}
 .logos{
-    animation: blink 1s infinite;
+    border-top: solid;
+    border-width: 1vh;
+    background-color:#2E294E;
+    border-bottom: solid;
+    border-width: 1vh;
+    border-color: white;
 }
 
 #menu{
     color: white;
-    position: fixed;
+    background-color: black;
+    height: 50vh;
+    width:10vh;
+}
+a{
+    font-family: Calibri,sans-serif;
+    font-size: 3vh;
+    text-decoration: none;
+    color: white;
+
 }
