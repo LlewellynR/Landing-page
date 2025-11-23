@@ -5,7 +5,8 @@
     color: white;
 
 }
-h3{
+
+h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -31,18 +32,40 @@ body {
 }
 
 .logos {
-    width: 100%;
-    animation-delay: -3s;
     animation: fade-up 3s;
 }
 
-#IDE {
+.wrap {
+    width: 100%;
     border-top: solid;
+    border-bottom: solid;
+}
 
+
+#IDE {
+    animation: scroll_left 15s infinite;
 }
 
 #languages {
-    border-bottom: solid;
+    animation: scroll_right 10s infinite;
+}
+
+@keyframes scroll_left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll_right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
 
 #menu {
