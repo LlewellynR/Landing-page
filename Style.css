@@ -39,15 +39,8 @@ body {
     width: 100%;
     border-top: solid;
     border-bottom: solid;
-}
-
-
-#IDE {
-    animation: scroll_left 15s infinite;
-}
-
-#languages {
-    animation: scroll_right 10s infinite;
+    backdrop-filter:blur(16px);
+    will-change: transform;
 }
 
 @keyframes scroll_left {
@@ -58,7 +51,12 @@ body {
         transform: translateX(-100%);
     }
 }
-
+#images {
+    display: inline-flex;
+    gap: 40px;
+    animation: scroll_right 12s linear infinite;
+    will-change: transform;
+}
 @keyframes scroll_right {
     from {
         transform: translateX(-100%);
@@ -81,11 +79,12 @@ a {
     font-family: Calibri, sans-serif;
     font-size: 18px;
     text-decoration: none;
-    color: white
+    color: white;
+
 }
 
 h1 {
-    font-family: Calibri, sans-serif;
+    font-family:sans-serif;
 
 }
 
@@ -101,14 +100,25 @@ h1 {
 }
 
 .about-me {
-
     width: 50%;
     animation: fade-left 2s;
+    font-size:1rem;
+    border: double 2px;
+    border-radius: 14px;
+    padding:10px;
+    backdrop-filter:blur(6px);
+    font-family:sans-serif;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    font-weight:450;
+    line-height: 1.6;
 }
 
 .introduction {
-    width: 50%;
-    animation: fade-right 2s;
+        width: 50%;
+        animation: fade-right 1.3s ease-out;
+        background: rgba(0,0,0,0.35);
+        padding: 20px;
+        border-radius: 18px;
 }
 
 @keyframes fade-left {
@@ -118,7 +128,7 @@ h1 {
     }
     to {
         opacity: 1;
-        transform: translateZ(0);
+        transform: translateY(0);
     }
 }
 
