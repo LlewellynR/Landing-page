@@ -1,53 +1,123 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
+
 }
-body{
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
     background-image: url("IMG/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
-#showMenu{
+
+#showMenu {
     background-image: url("IMG/Menu.svg");
     height: 5vh;
     width: 5vh;
     background-color: black;
-    border:none;
+    border: none;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#showMenu:hover{
-    cursor:pointer;
+
+#showMenu:hover {
+    cursor: pointer;
 }
 
-.IDE{
-
-
+.logos {
+    width: 100%;
+    animation-delay: -3s;
+    animation: fade-up 3s;
 }
-.logos{
-    background-color:#2E294E;
-    border-width: 1px;
-    border-color: #2E294E;
+
+#IDE {
     border-top: solid;
+
 }
-#IDE{
-border-top: solid;
-border-color: white;
-}
-#languages{
+
+#languages {
     border-bottom: solid;
-    border-color: white;
 }
 
-#menu{
-    color: white;
+#menu {
+    display: flex;
+    gap: 10px;
+    list-style: none;
     background-color: black;
-    height: 50vh;
-    width:10vh;
+    transition: ease-in-out 0.3s;
+    position: absolute;
 }
-a{
-    font-family: Calibri,sans-serif;
-    font-size: 3vh;
-    text-decoration: none;
-    color: white;
 
+a {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white
+}
+
+h1 {
+    font-family: Calibri, sans-serif;
+
+}
+
+#Me {
+    border: solid black 10px;
+    border-radius: 500px;
+}
+
+.flex {
+    padding-top: 3vh;
+    display: flex;
+    width: 100%;
+}
+
+.about-me {
+
+    width: 50%;
+    animation: fade-left 2s;
+}
+
+.introduction {
+    width: 50%;
+    animation: fade-right 2s;
+}
+
+@keyframes fade-left {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fade-right {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
