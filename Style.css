@@ -5,8 +5,11 @@
     color: white;
 
 }
+p{
+    font-family:'Montserrat',sans-serif;
+}
 
-h3 {
+h3,h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -40,12 +43,12 @@ body {
     border-top: solid;
     border-bottom: solid;
     backdrop-filter:blur(16px);
-    will-change: transform;
+    overflow: hidden;
 }
 
 @keyframes scroll_left {
     from {
-        transform: translateX(100%);
+        transform: translateX(10%);
     }
     to {
         transform: translateX(-100%);
@@ -54,15 +57,15 @@ body {
 #images {
     display: inline-flex;
     gap: 40px;
-    animation: scroll_right 12s linear infinite;
+    animation: scroll_right 10s linear infinite;
     will-change: transform;
 }
 @keyframes scroll_right {
     from {
-        transform: translateX(-100%);
+        transform: translateX(0);
     }
     to {
-        transform: translateX(100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -82,15 +85,17 @@ a {
     color: white;
 
 }
-
 h1 {
     font-family:sans-serif;
 
 }
-
 #Me {
     border: solid black 10px;
     border-radius: 500px;
+    float:right;
+}
+#projects{
+    list-style-type: none;
 }
 
 .flex {
@@ -139,7 +144,7 @@ h1 {
     }
     to {
         opacity: 1;
-        transform: translateZ(0);
+        transform: translateX(0);
     }
 
 }
