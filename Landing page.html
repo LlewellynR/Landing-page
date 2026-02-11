@@ -8,8 +8,7 @@
 <body>
 <header>
     <nav>
-        <button onclick="showMenu()" id="showMenu"></button>
-        <ul id="menu" style="opacity: 0">
+        <ul id="menu">
             <li><a href="https://www.linkedin.com/in/ryanllewellyn700/" target="_blank">Linkedin</a></li>
             <li><a href="https://github.com/LlewellynR" target="_blank">Github</a></li>
         </ul>
@@ -34,8 +33,6 @@
                 <li><a href="https://github.com/LlewellynR/Introduction">Induction page(CSS)</a></li>
                 <li>Web forum(WIP)(PHP,SQL,JS,CSS,HTML)</li>
             </ul>
-            <img src="IMG/Me.jpg" id="Me" alt="Photo of me" width="300" height="300">
-
         </div>
         <div class="about-me">
             <h1>About me:</h1>
@@ -72,7 +69,6 @@
             <img src="IMG/php-logo.png" alt="" height="125" width="125">
             <img src="IMG/mysql-logo.png" alt="" height="125" width="125">
             <img src="IMG/Postgresql-logo.png" alt="" height="125" width="125">
-
             <img src="IMG/php-storm-logo.svg" alt="" height="100" width="100">
             <img src="IMG/Web-storm-logo.svg" alt="" height="100" width="100">
             <img src="IMG/vscode-logo.svg" alt="" height="100" width="100">
@@ -86,6 +82,23 @@
         </div>
     </div>
 </main>
-<script src="index.js"></script>
+<script src="Vanta/three.r134.min.js"></script>
+<script src="Vanta/vanta.waves.min.js"></script>
+<script>
+    VANTA.WAVES({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        shininess: 73.00,
+        waveHeight: 20.50,
+        waveSpeed: 0.85,
+        zoom: 0.87
+    })
+</script>
 </body>
 </html>
