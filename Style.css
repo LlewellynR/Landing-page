@@ -126,7 +126,7 @@ h1 {
 
 }
 
-.about-me, .introduction {
+.introduction {
     font-size: 1rem;
     padding: 10px;
     backdrop-filter: blur(6px);
@@ -141,9 +141,10 @@ h1 {
     margin-right: 5vh;
 }
 
-.about-me {
-    animation: fade-left 1.3s ease-out;
-}
+
+
+
+
 
 @keyframes fade-left {
     from {
