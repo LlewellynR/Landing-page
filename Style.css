@@ -16,8 +16,7 @@ h3, h2 {
 
 
 body {
-    overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #showMenu:hover {
@@ -69,7 +68,7 @@ nav {
 .links {
     margin-top: 10px;
     margin-left: 30px;
-    background-color:dodgerblue;
+    background-color: #0D3B66;
     color: white;
     border: none;
     padding: 12px;
@@ -81,12 +80,13 @@ nav {
 }
 
 .links:hover {
-    border:2px solid white;
-    transform:scale(1.1);
+    border: 2px solid white;
+    transform: scale(1.1);
 }
+
 .links:active {
     background-color: white;
-    color:dodgerblue;
+    color: dodgerblue;
 }
 
 
@@ -107,11 +107,22 @@ h1 {
     list-style-type: none;
 }
 
+#projects li{
+    background-color: #0D3B66;
+    margin: 10px;
+    border-radius: 10px;
+    padding:20px;
+}
+#projects li:hover{
+    transform: translateY(-1%);
+    border: 2px solid white;
+}
+
 .flex {
-        flex-direction: column;
-        gap: 60px;
-        width: 80%;
-        margin: 0 auto;
+    flex-direction: column;
+    gap: 60px;
+    width: 80%;
+    margin: 0 auto;
 
 }
 
