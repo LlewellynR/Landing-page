@@ -67,15 +67,14 @@ nav {
 .links {
     margin-top: 10px;
     margin-left: 30px;
-    backdrop-filter: blur(10px);
-    color:white;
-    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     padding: 12px;
     width: 10%;
     text-align: center;
     border-radius: 12px;
     font-weight: 600;
- /*   box-shadow: 0 0 15px white;*/
+    /*   box-shadow: 0 0 15px white;*/
 }
 
 .links:hover {
@@ -104,21 +103,20 @@ h1 {
 #projects {
     padding-top: 20px;
     list-style-type: none;
-    border-radius:12px;
-  /*  background-color: #ffff;*/
+    border-radius: 12px;
+    /*  background-color: #ffff;*/
 }
 
-#projects li{
-    background-color:#48304D;
+#projects li {
+    background-color:  #3A2440;
     margin: 10px;
     border-radius: 10px;
-    padding:20px;
+    padding: 20px;
     box-shadow: 4px 4px 4px grey;
 }
-#projects li:hover{
-    transform: translateY(-2%);
-    border-bottom:2px white solid;
 
+#projects li:hover {
+    transform: translateY(-2%);
 }
 
 .flex {
@@ -126,7 +124,6 @@ h1 {
     gap: 60px;
     width: 80%;
     margin: 0 auto;
-
 }
 
 .introduction {
@@ -143,10 +140,6 @@ h1 {
     animation: fade-right 1.3s ease-out;
     margin-right: 5vh;
 }
-
-
-
-
 
 
 @keyframes fade-left {
